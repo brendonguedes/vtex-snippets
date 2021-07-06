@@ -65,4 +65,10 @@ This project aims to have a set of Snippets and shortcuts for creating [VTEX IO 
 * [Buy me a Coffee](ko-fi.com/brendonguedes)
 * [Report a problema or improvement](https://github.com/brendonguedes/vtex-snippets/issues)
 
-**Thanks**
+<br>
+
+Made with 💜 by [Brendon Guedes](https://www.linkedin.com/in/brendonguedes/)
+<br>
+Consider leaving a ⭐ in this project
+<br>
+**Thanks 😍**
