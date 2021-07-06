@@ -62,5 +62,6 @@
 
 * [Write me an email](brendonguedes@icloud.com)
 * [Buy me a Coffee](ko-fi.com/brendonguedes)
+* [Report a problema or improvement](https://github.com/brendonguedes/vtex-snippets/issues)
 
 **Thanks**

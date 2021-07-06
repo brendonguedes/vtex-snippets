@@ -10,7 +10,7 @@
       "theme": "light"
     },
     "repository": {
-        "url": "https://github.com/"
+        "url": "https://github.com/brendonguedes/vtex-snippets"
       },
     "engines": {
         "vscode": "^1.57.0"
