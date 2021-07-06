@@ -1,7 +1,7 @@
 {
   "Flex Layout Row": {
     "scope": "jsonc",
-    "prefix": "flr",
+    "prefix": "vfr",
     "body": [
       "\"flex-layout.row#${1:name}\": {",
       "  \"children\": [\"$2\"],",
@@ -14,7 +14,7 @@
   },
   "Flex Layout Column": {
     "scope": "jsonc",
-    "prefix": "flc",
+    "prefix": "vfc",
     "body": [
       "\"flex-layout.col#${1:name}\": {",
       "  \"children\": [\"$2\"],",
