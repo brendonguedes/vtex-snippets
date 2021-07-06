@@ -1,5 +1,3 @@
-# README
-
 ## This is the README for your extension pack [VTEX IO Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/overview-5).
 
 <br>
