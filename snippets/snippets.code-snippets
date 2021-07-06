@@ -1,0 +1,138 @@
+{
+  "Flex Layout Row": {
+    "scope": "jsonc",
+    "prefix": "flr",
+    "body": [
+      "\"flex-layout.row#${1:name}\": {",
+      "  \"children\": [\"$2\"],",
+      "  \"props\": {",
+      "    \"blockClass\": [\"$1\"]",
+      "  }",
+      "},"
+    ],
+    "description": "Inserts a flex row."
+  },
+  "Flex Layout Column": {
+    "scope": "jsonc",
+    "prefix": "flc",
+    "body": [
+      "\"flex-layout.col#${1:name}\": {",
+      "  \"children\": [\"$2\"],",
+      "  \"props\": {",
+      "    \"blockClass\": [\"$1\"]",
+      "  }",
+      "},"
+    ],
+    "description": "Inserts a flex column."
+  },
+  "Rich Text": {
+    "scope": "jsonc",
+    "prefix": "vrt",
+    "body": [
+      "\"rich-text#${1:name}\": {",
+      "  \"props\": {",
+      "    \"blockClass\": [\"$1\"],",
+      "    \"font\": \"t-body\",",
+      "    \"text\": \"$2\",",
+      "    \"textAlignment\": \"${3|CENTER,LEFT,RIGHT|}\",",
+      "    \"textColor\": \"c-on-base\",",
+      "    \"textPosition\": \"${4|CENTER,LEFT,RIGHT|}\"",
+      "  }",
+      "},"
+    ],
+    "description": "Inserts a rich text"
+  },
+  "Image": {
+    "scope": "jsonc",
+    "prefix": "vimg",
+    "body": [
+      "\"image#${1:name}\": {",
+      "\t\"props\": {",
+      "\t\t\"blockClass\": [\"$1\"],",
+      "\t\t\"maxHeight\": ${2:24},",
+      "\t\t\"src\": \"$3\"",
+      "\t}",
+      "},"
+    ],
+    "description": "Inserts an image block"
+  },
+  "Slider Layout": {
+    "scope": "jsonc",
+    "prefix": "vsld",
+    "body": [
+      "\"slider-layout#${1:name}\": {",
+      "\t\"children\": [\"$2\"],",
+      "\t\"props\": {",
+      "\t\t\"autoplay\": {",
+      "\t\t\t\t\"stopOnHover\": \"${3|true,false|}\"",
+      "\t\t},",
+      "\t\t\"blockClass\": \"$1\",",
+      "\t\t\"infinite\": ${4|true,false|},",
+      "\t\t\"itemsPerPage\": {",
+      "\t\t\t\"desktop\": ${5:1},",
+      "\t\t\t\"mobile\": $5",
+      "\t\t},",
+      "\t\t\"showNavigationArrows\": \"${6|always,desktopOnly,mobileOnly,never|}\",",
+      "\t\t\"showPaginationDots\": \"${7|always,desktopOnly,mobileOnly,never|}\"",
+      "\t}",
+      "},"
+    ],
+    "description": "Inserts a slider layout"
+  },
+  "Logo": {
+    "scope": "jsonc",
+    "prefix": "vlogo",
+    "body": [
+      "\"logo#${1:name}\": {",
+      "\t\"props\": {",
+      "\t\t\"blockClass\": \"$1\",",
+      "\t\t\"height\": ${2:36},",
+      "\t\t\"href\": \"$3\",",
+      "\t\t\"url\": \"$4\",",
+      "\t\t\"mobileWidth\": ${5:24},",
+      "\t\t\"mobileHeight\": ${6:24},",
+      "\t\t\"width\": ${7:36}",
+      "\t}",
+      "},"
+    ],
+    "description": "Inserts a logo block"
+  },
+  "Info Card": {
+    "scope": "jsonc",
+    "prefix": "vic",
+    "body": [
+      "\"info-card#${1:name}\": {",
+      "\t\"props\": {",
+      "\t\t\"blockClass\": \"$1\",",
+      "\t\t\"callToActionText\": \"$2\",",
+      "\t\t\"headline\": \"$3\",",
+      "\t\t\"id\": \"$4\",",
+      "\t\t\"imageUrl\": \"$5\",",
+      "\t\t\"subhead\": \"$6\",",
+      "\t\t\"textAlignment\": \"${7|center,left,right|}\",",
+      "\t\t\"textPosition\": \"${8|center,left,right|}\"",
+      "\t}",
+      "},"
+    ]
+  },
+  "Condition Layout": {
+    "scope": "jsonc",
+    "prefix": "vcl",
+    "body": [
+      "\"condition-layout.${1:context}#${2:name}\": {",
+      "\t\"props\": {",
+      "\t\t\"conditions\": [",
+      "\t\t\t{",
+      "\t\t\t\t\"subject\": \"$3\",",
+      "\t\t\t\t\"arguments\": {",
+      "\t\t\t\t\t\"$4\": \"$5\"",
+      "\t\t\t\t}",
+      "\t\t\t}",
+      "\t\t],",
+      "\t\t\"Then\": \"${6:block}\",",
+      "\t\t\"Else\": \"${7:block}\"",
+      "\t}",
+      "}"
+    ]
+  }
+}
