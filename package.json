@@ -1,0 +1,35 @@
+{
+    "name": "vtex-snippets",
+    "displayName": "VTEX IO Snippets",
+    "description": "This project aims to have a set of Snippets and shortcuts for creating VTEX IO Store Framework.",
+    "version": "0.0.1",
+    "publisher": "brendonguedes",
+    "icon": "images/logo.png",
+    "galleryBanner": {
+      "color": "#E31C58",
+      "theme": "light"
+    },
+    "repository": {
+        "url": "https://github.com/"
+      },
+    "engines": {
+        "vscode": "^1.57.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "keywords": [
+      "vtex",
+      "vtex-io",
+      "store-framework",
+      "jsonc"
+    ],
+    "contributes": {
+      "snippets": [
+        {
+          "language": "jsonc",
+          "path": "./snippets/snippets.code-snippets"
+        }
+      ]
+    } 
+}
