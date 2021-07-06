@@ -2,12 +2,12 @@
     "name": "vtex-snippets",
     "displayName": "VTEX IO Snippets",
     "description": "This project aims to have a set of Snippets and shortcuts for creating VTEX IO Store Framework.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "brendonguedes",
     "icon": "images/logo.png",
     "galleryBanner": {
-      "color": "#E31C58",
-      "theme": "light"
+      "color": "#414558",
+      "theme": "dark"
     },
     "repository": {
         "url": "https://github.com/brendonguedes/vtex-snippets"
