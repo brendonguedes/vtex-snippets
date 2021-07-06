@@ -1,3 +1,4 @@
+
 ## This is the README for your extension pack [VTEX IO Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/overview-5).
 
 <br>
@@ -16,6 +17,7 @@
 |   `vcl→` | `VTEX Condition Layout (2.x)` |
 
 <br>
+
 ## Snippets Description
 
 ### `vfr`
