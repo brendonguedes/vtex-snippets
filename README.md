@@ -189,8 +189,10 @@ The extension will be activated when working on .jsonc files
 * [Report a problema or improvement](https://github.com/brendonguedes/vtex-snippets/issues)
 
 <br>
+
 Made with 💜 by [Brendon Guedes](https://www.linkedin.com/in/brendonguedes/)
 <br>
+
 Consider leaving a ⭐ in this project
 <br>
 
