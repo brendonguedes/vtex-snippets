@@ -1,7 +1,11 @@
-# vtex-snippets
-This project aims to have a set of Snippets and shortcuts for creating [VTEX IO Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/overview-5).
+# VTEX IO SNIPPETS
 
+This project aims to have a set of Snippets and shortcuts for creating [VTEX IO Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/overview-5).
 <br>
+
+## Requirements
+
+The extension will be activated when working on .jsonc files
 
 ## Current snippets
 
@@ -11,14 +15,14 @@ This project aims to have a set of Snippets and shortcuts for creating [VTEX IO 
 |   `vfr→` | `VTEX Flex Layout Row`        |
 |   `vfc→` | `VTEX Flex Layout Column`     |
 |   `vrt→` | `VTEX Rich Text`              |
-|  `vimg→` | `VTEX Image`                  |
-|  `vsld→` | `VTEX Slider Layout`          |
-| `vlogo→` | `VTEX Logo`                   |
 |   `vic→` | `VTEX Info Card`              |
+|   `vsl→` | `VTEX Store Link`             |
+|   `vml→` | `VTEX Modal Layout`           |
+|   `vsf→` | `VTEX Store Form`             |
 |   `vcl→` | `VTEX Condition Layout (2.x)` |
-|   `vsl→` | `VTEX Store Link` |
-|   `vml→` | `VTEX Modal Layout` |
-|   `vsf→` | `VTEX Store Form` |
+| `vlogo→` | `VTEX Logo`                   |
+|  `vsld→` | `VTEX Slider Layout`          |
+|  `vimg→` | `VTEX Image`                  |
 
 <br>
 
@@ -34,34 +38,14 @@ This project aims to have a set of Snippets and shortcuts for creating [VTEX IO 
     "responsive-layout.phone"
   ]
 },
-
 "responsive-layout.desktop": {
-  "children": ["rich-text#desktop"]
+  "children": []
 },
 "responsive-layout.tablet": {
-  "children": ["rich-text#tablet"]
+  "children": []
 },
 "responsive-layout.phone": {
-  "children": ["rich-text#phone"]
-},
-
-"rich-text#desktop": {
-  "props": {
-    "text": "# This will only show up on desktop.",
-    "blockClass": "title"
-  }
-},
-"rich-text#tablet": {
-  "props": {
-    "text": "# This will only show up on tablet.",
-    "blockClass": "title"
-  }
-},
-"rich-text#phone": {
-  "props": {
-    "text": "# This will only show up on phone.",
-    "blockClass": "title"
-  }
+  "children": []
 },
 ```
 
@@ -118,15 +102,10 @@ This project aims to have a set of Snippets and shortcuts for creating [VTEX IO 
 ```jsonc
 {
   "store.home": {
-    "children": [
-      "modal-trigger#example"
-    ]
+    "children": ["modal-trigger#example"]
   },
-   "modal-trigger#example": {
-    "children": [
-      "rich-text#example",
-      "modal-layout#example"
-    ]
+  "modal-trigger#example": {
+    "children": ["rich-text#example", "modal-layout#example"]
   },
   "rich-text#example": {
     "props": {
@@ -134,9 +113,7 @@ This project aims to have a set of Snippets and shortcuts for creating [VTEX IO 
     }
   },
   "modal-layout#example": {
-    "children": [
-      "rich-text#modal-content"
-    ]
+    "children": ["rich-text#modal-content"]
   },
   "rich-text#modal-content": {
     "props": {
@@ -202,9 +179,7 @@ This project aims to have a set of Snippets and shortcuts for creating [VTEX IO 
       "label": "Submit"
     }
   }
-
 ```
-
 <br>
 
 ## For more information
@@ -214,9 +189,9 @@ This project aims to have a set of Snippets and shortcuts for creating [VTEX IO 
 * [Report a problema or improvement](https://github.com/brendonguedes/vtex-snippets/issues)
 
 <br>
-
 Made with 💜 by [Brendon Guedes](https://www.linkedin.com/in/brendonguedes/)
 <br>
 Consider leaving a ⭐ in this project
 <br>
+
 **Thanks 😍**
