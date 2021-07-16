@@ -5,13 +5,19 @@
     "version": "0.2.2",
     "publisher": "brendonguedes",
     "icon": "images/logo.png",
+    "license": "MIT",
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
     "galleryBanner": {
-      "color": "#414558",
-      "theme": "dark"
+        "color": "#414558",
+        "theme": "dark"
     },
     "repository": {
         "url": "https://github.com/brendonguedes/vtex-snippets"
-      },
+    },
     "engines": {
         "vscode": "^1.57.0"
     },
@@ -19,17 +25,22 @@
         "Snippets"
     ],
     "keywords": [
-      "vtex",
-      "vtex-io",
-      "store-framework",
-      "jsonc"
+        "vtex",
+        "vtex-io",
+        "store-framework",
+        "jsonc"
     ],
     "contributes": {
-      "snippets": [
-        {
-          "language": "jsonc",
-          "path": "./snippets/snippets.code-snippets"
-        }
-      ]
-    } 
+        "snippets": [
+            {
+                "language": "jsonc",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^12.1.4",
+        "@commitlint/config-conventional": "^12.1.4",
+        "husky": "^7.0.1"
+    }
 }
