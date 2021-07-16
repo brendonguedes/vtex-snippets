@@ -3,7 +3,7 @@
     "scope": "jsonc",
     "prefix": "vrl",
     "body": [
-      "\"store.custom#${1:name}\": {",
+      "\"store.custom#about-us\": {",
       "  \"blocks\": [",
       "    \"responsive-layout.desktop\",",
       "    \"responsive-layout.tablet\",",
@@ -27,34 +27,34 @@
     "prefix": "vml",
     "body": [
       "{",
-      "  \"store.home\": {",
-      "    \"children\": [",
-      "      \"modal-trigger#${1:name}\"",
-      "    ]",
-      "  },",
-      "   \"modal-trigger#${1:name}\": {",
-      "    \"children\": [",
-      "      \"rich-text#example\",",
-      "      \"modal-layout#${1:name}\"",
-      "    ]",
-      "  },",
-      "  \"rich-text#example\": {",
-      "    \"props\": {",
-      "      \"text\": \"Click me\"",
-      "    }",
-      "  },",
-      "  \"modal-layout#${1:name}\": {",
-      "    \"children\": [",
-      "      \"rich-text#modal-content\"",
-      "    ]",
-      "  },",
-      "  \"rich-text#modal-content\": {",
-      "    \"props\": {",
-      "      \"text\": \"Hello\"",
-      "    }",
-      "  }",
-      "}",
-      ""
+    "  \"store.home\": {",
+    "    \"children\": [",
+    "      \"modal-trigger#${1:name}\"",
+    "    ]",
+    "  },",
+    "   \"modal-trigger#${1:name}\": {",
+    "    \"children\": [",
+    "      \"rich-text#example\",",
+    "      \"modal-layout#${1:name}\"",
+    "    ]",
+    "  },",
+    "  \"rich-text#example\": {",
+    "    \"props\": {",
+    "      \"text\": \"Click me\"",
+    "    }",
+    "  },",
+    "  \"modal-layout#${1:name}\": {",
+    "    \"children\": [",
+    "      \"rich-text#modal-content\"",
+    "    ]",
+    "  },",
+    "  \"rich-text#modal-content\": {",
+    "    \"props\": {",
+    "      \"text\": \"Hello\"",
+    "    }",
+    "  }",
+    "}",
+    ""
     ],
     "description": "Inserts a modal layout."
   },
@@ -194,7 +194,7 @@
     "prefix": "vsld",
     "body": [
       "\"slider-layout#${1:name}\": {",
-      "\t\"children\": [\"$2:name\"],",
+      "\t\"children\": [\"$2\"],",
       "\t\"props\": {",
       "\t\t\"autoplay\": {",
       "\t\t\t\t\"stopOnHover\": \"${3|true,false|}\"",
@@ -246,8 +246,7 @@
       "\t\t\"textPosition\": \"${8|center,left,right|}\"",
       "\t}",
       "},"
-    ],
-    "description": "Inserts a Info Card block"
+    ]
   },
   "Condition Layout": {
     "scope": "jsonc",
@@ -267,115 +266,6 @@
       "\t\t\"Else\": \"${7:block}\"",
       "\t}",
       "}"
-    ],
-    "description": "Inserts a Condition Layout block"
-  },
-  "Shelf": {
-    "scope": "jsonc",
-    "prefix": "vshelf",
-    "body": [
-      "  \"product-summary.shelf#${1:name}\": {",
-      "\t\"children\": [\"$2:name\"],",
-      "  },",
-      "  \"list-context.product-list#${1:name}\": {",
-      "    \"blocks\": [\"product-summary.shelf#${1:name}\"],",
-      "    \"children\": [\"slider-layout#{1:name}\"]",
-      "  }",
-      "}",
-      ""
-    ],
-    "description": "Inserts a Shelf block"
-  },
-  "Category Menu": {
-    "scope": "jsonc",
-    "prefix": "vcm",
-    "body": [
-      "{",
-      "  \"category-menu#${1:name}\": {",
-      "    \"props\": {",
-      "      \"showAllDepartments\": true,",
-      "      \"showSubcategories\": true,",
-      "      \"menuDisposition\": \"center\",",
-      "      \"departments\": [],",
-      "      \"sortSubcategories\": \"${1:name}\"",
-      "    }",
-      "  }",
-      "}",
-      ""
-    ],
-    "description": "Inserts a Category Menu block"
-  },
-  "Iframe": {
-    "scope": "jsonc",
-    "prefix": "viframe",
-    "body": [
-      "  \"iframe${1:name}\": {",
-      "    \"props\": {",
-      "      \"src\": \"\"",
-      "    }",
-      "  }"
-    ],
-    "description": "Inserts a Iframe block"
-  },
-  "Video": {
-    "scope": "jsonc",
-    "prefix": "vvideo",
-    "body": [
-      "  \"video#${1:name}\": {",
-      "    \"props\": {",
-      "      \"width\": \"100%\",",
-      "      \"height\": \"600px\",",
-      "      \"loop\": false,",
-      "      \"autoPlay\": true,",
-      "      \"muted\": false,",
-      "      \"src\": \"https://www.youtube.com/watch?v=wygFqZXMIco\",",
-      "      \"blockClass\": \"${1:name}\"",
-      "    }",
-      "  }",
-      ""
-    ],
-    "description": "Inserts a Video block"
-  },
-  "SKU Selector": {
-    "scope": "jsonc",
-    "prefix": "vss",
-    "body": [
-      "  \"sku-selector#${1:name}\": {",
-      "    \"props\": {",
-      "      \"hideImpossibleCombinations\": false",
-      "    }",
-      ""
-    ],
-    "description": "Inserts a SKU Selector block"
-  },
-  "Flex Col into Flex Row": {
-    "scope": "jsonc",
-    "prefix": "vfrfc",
-    "body": [
-      "\"flex-layout.row#${1:name}\": {",
-      "  \"children\": [    ",
-      "    \"flex-layout.col#${1:name}\"",
-      "  ]",
-      "},",
-      "\"flex-layout.col#${1:name}\": {",
-      "  \"children\": []",
-      "},"
-    ],
-    "description": "Inserts a Flex Col into Flex Row block"
-  },
-  "Flex Row into Flex Col": {
-    "scope": "jsonc",
-    "prefix": "vfcfr",
-    "body": [
-      "\"flex-layout.col#${1:name}\": {",
-      "  \"children\": [    ",
-      "    \"flex-layout.row#${1:name}\"",
-      "  ]",
-      "},",
-      "\"flex-layout.row#${1:name}\": {",
-      "  \"children\": []",
-      "},"
-    ],
-    "description": "Inserts a Flex Row into Flex Col block"
+    ]
   }
 }
