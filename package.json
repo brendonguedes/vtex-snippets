@@ -4,6 +4,7 @@
     "description": "This project aims to have a set of Snippets and shortcuts for creating VTEX IO Store Framework.",
     "version": "0.2.2",
     "publisher": "brendonguedes",
+    "author": "Brendon Guedes <brendonguedes@icloud.com> (https://www.linkedin.com/in/brendonguedes/)",
     "icon": "images/logo.png",
     "license": "MIT",
     "scripts": {
@@ -53,6 +54,19 @@
     "config": {
         "commitizen": {
             "path": "./node_modules/cz-conventional-changelog"
+        },
+        "cz-emoji": {
+            "cz-emoji": {
+                "symbol": true,
+                "types": [
+                  {
+                    "emoji": "🌟",
+                    "code": ":star2:",
+                    "description": "A new feature",
+                    "name": "feature"
+                  }
+                ]
+              }
         }
     }
 }
