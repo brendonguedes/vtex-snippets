@@ -9,20 +9,27 @@ The extension will be activated when working on .jsonc files
 
 ## Current snippets
 
-|   Prefix | Method                        |
-| -------: | ----------------------------- |
-|   `vrl→` | `VTEX Responsive Layout`      |
-|   `vfr→` | `VTEX Flex Layout Row`        |
-|   `vfc→` | `VTEX Flex Layout Column`     |
-|   `vrt→` | `VTEX Rich Text`              |
-|   `vic→` | `VTEX Info Card`              |
-|   `vsl→` | `VTEX Store Link`             |
-|   `vml→` | `VTEX Modal Layout`           |
-|   `vsf→` | `VTEX Store Form`             |
-|   `vcl→` | `VTEX Condition Layout (2.x)` |
-| `vlogo→` | `VTEX Logo`                   |
-|  `vsld→` | `VTEX Slider Layout`          |
-|  `vimg→` | `VTEX Image`                  |
+|     Prefix | Method                        |
+| ---------: | ----------------------------- |
+|     `vrl→` | `VTEX Responsive Layout`      |
+|     `vfr→` | `VTEX Flex Layout Row`        |
+|     `vfc→` | `VTEX Flex Layout Column`     |
+|     `vrt→` | `VTEX Rich Text`              |
+|     `vic→` | `VTEX Info Card`              |
+|     `vsl→` | `VTEX Store Link`             |
+|     `vml→` | `VTEX Modal Layout`           |
+|     `vsf→` | `VTEX Store Form`             |
+|     `vcl→` | `VTEX Condition Layout (2.x)` |
+|   `vlogo→` | `VTEX Logo`                   |
+|    `vsld→` | `VTEX Slider Layout`          |
+|    `vimg→` | `VTEX Image`                  |
+|  `vshelf→` | `VTEX Shelf`                  |
+|     `vcm→` | `VTEX Category Menu`          |
+|   `vfcfr→` | `VTEX Flex Row into Flex Col` |
+|   `vfrfc→` | `VTEX Flex Col into Flex Row` |
+|     `vss→` | `VTEX SKU Selector`           |
+|  `vvideo→` | `VTEX Video`                  |
+| `viframe→` | `VTEX Iframe`                 |
 
 <br>
 
@@ -180,13 +187,116 @@ The extension will be activated when working on .jsonc files
     }
   }
 ```
+
+### `vshelf`
+
+```jsonc
+{
+  "product-summary.shelf#demo1": {
+    "children": []
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf#demo1"],
+    "children": ["slider-layout#demo-products"]
+  }
+}
+```
+
+### `vsl`
+
+```jsonc
+"link.product#product-page": {
+    "props": {
+      "href": "/{slug}/p",
+      "label": "More details >"
+    }
+  },
+```
+
+### `vcm`
+
+```jsonc
+{
+  "category-menu": {
+    "props": {
+      "showAllDepartments": true,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "departments": [],
+      "sortSubcategories": "name"
+    }
+  }
+}
+```
+
+### `viframe`
+
+```jsonc
+  "iframe": {
+    "props": {
+      "src": ""
+    }
+  }
+```
+
+### `vvideo`
+
+```jsonc
+  "video#background": {
+    "props": {
+      "width": "100%",
+      "height": "600px",
+      "loop": false,
+      "autoPlay": true,
+      "muted": false,
+      "src": "https://www.youtube.com/watch?v=wygFqZXMIco",
+      "blockClass": "videoEl"
+    }
+  }
+```
+
+### `vss`
+
+```jsonc
+  "sku-selector#rename": {
+    "props": {
+      "hideImpossibleCombinations": false
+    }
+  },
+```
+### `vfrfc`
+
+```jsonc
+  "flex-layout.row#rename": {
+    "children": [
+      "flex-layout.col#rename"
+    ]
+  },
+  "flex-layout.col#rename": {
+    "children": []
+  },
+```
+### `vfcfr`
+
+```jsonc
+  "flex-layout.col#rename": {
+    "children": [
+      "flex-layout.row#rename"
+    ]
+  },
+  "flex-layout.row#rename": {
+    "children": []
+  },
+```
+
+
 <br>
 
 ## For more information
 
-* [Write me an email](brendonguedes@icloud.com)
-* [Buy me a Coffee](ko-fi.com/brendonguedes)
-* [Report a problema or improvement](https://github.com/brendonguedes/vtex-snippets/issues)
+- [Write me an email](brendonguedes@icloud.com)
+- [Buy me a Coffee](ko-fi.com/brendonguedes)
+- [Report a problema or improvement](https://github.com/brendonguedes/vtex-snippets/issues)
 
 <br>
 
