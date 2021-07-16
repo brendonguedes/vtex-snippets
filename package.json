@@ -6,6 +6,9 @@
     "publisher": "brendonguedes",
     "icon": "images/logo.png",
     "license": "MIT",
+    "scripts": {
+        "commit": "git-cz"
+    },
     "husky": {
         "hooks": {
             "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
@@ -29,7 +32,8 @@
         "vtex",
         "vtex-io",
         "store-framework",
-        "jsonc"
+        "jsonc",
+        "snippets"
     ],
     "contributes": {
         "snippets": [
