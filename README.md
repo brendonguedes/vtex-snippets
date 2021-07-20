@@ -1,16 +1,29 @@
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=brendonguedes.vtex-snippets" rel="noopener" target="_blank"><img width="150" src="https://github.com/brendonguedes/vtex-snippets/blob/main/images/logo.png" alt="VTEX-IO logo"></a></p>
+  <a href="https://marketplace.visualstudio.com/items?itemName=brendonguedes.vtex-snippets" rel="noopener" target="_blank"><img width="150" src="https://github.com/brendonguedes/vtex-snippets/blob/main/images/logo.png" alt="VTEX IO logo"></a>
 </p>
 
 <h1 align="center">VTEX IO SNIPPETS</h1>
 <p align="center">A vscode <a href="https://marketplace.visualstudio.com/items?itemName=brendonguedes.vtex-snippets" target="_blank">extension</a> to create VTEX IO stores faster 🚀</p>
 
-This project aims to have a set of Snippets and shortcuts for creating [VTEX IO Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/overview-5).
-<br>
+[![GitHub stars](https://img.shields.io/github/stars/brendonguedes/vtex-snippets?style=social&label=Star&maxAge=2592000)](https://github.com/brendonguedes/vtex-snippets/stargazers/)
 
-## ⚠️ WARNING
+
+## 💡 About the project
+
+This project aims to have a set of Snippets and shortcuts for creating [VTEX IO Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/overview-5).
+
+## 🤷🏻‍♂️ CAUTION
 
 Make sure you are writing to a .jsonc file, the extension is only enabled when using jsonc files.
+
+## Installation
+
+To install directly from the vscode extension manager, use:
+```sh
+brendonguedes.vtex-snippets
+```
+
+---
 
 ## Current snippets
 
@@ -35,7 +48,6 @@ Make sure you are writing to a .jsonc file, the extension is only enabled when u
 |     `vss→` | `VTEX SKU Selector`           |
 |  `vvideo→` | `VTEX Video`                  |
 | `viframe→` | `VTEX Iframe`                 |
-
 
 ## Snippets Description
 
@@ -268,6 +280,7 @@ Make sure you are writing to a .jsonc file, the extension is only enabled when u
     }
   },
 ```
+
 ### `vfrfc`
 
 ```jsonc
@@ -280,6 +293,7 @@ Make sure you are writing to a .jsonc file, the extension is only enabled when u
     "children": []
   },
 ```
+
 ### `vfcfr`
 
 ```jsonc
@@ -293,8 +307,13 @@ Make sure you are writing to a .jsonc file, the extension is only enabled when u
   },
 ```
 
-
 <br>
+
+## 📝 Licence
+
+This project is under MIT licence. See the archive [LICENSE](LICENSE) to more details.
+
+---
 
 ## For more information
 
