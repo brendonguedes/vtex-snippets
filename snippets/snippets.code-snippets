@@ -62,7 +62,7 @@
     "scope": "jsonc",
     "prefix": "vsf",
     "body": [
-      "  \"form{1:name}\": {",
+      "  \"form#${1:name}\": {",
       "    \"props\": {",
       "      \"entity\": \"clients\",",
       "      \"schema\": \"person\"",
@@ -309,7 +309,7 @@
     "scope": "jsonc",
     "prefix": "viframe",
     "body": [
-      "  \"iframe${1:name}\": {",
+      "  \"iframe#${1:name}\": {",
       "    \"props\": {",
       "      \"src\": \"\"",
       "    }",
