@@ -1,11 +1,16 @@
-# VTEX IO SNIPPETS
+<p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=brendonguedes.vtex-snippets" rel="noopener" target="_blank"><img width="150" src="https://github.com/brendonguedes/vtex-snippets/blob/main/images/logo.png" alt="VTEX-IO logo"></a></p>
+</p>
+
+<h1 align="center">VTEX IO SNIPPETS</h1>
+<p align="center">A vscode <a href="https://marketplace.visualstudio.com/items?itemName=brendonguedes.vtex-snippets" target="_blank">extension</a> to create VTEX IO stores faster 🚀</p>
 
 This project aims to have a set of Snippets and shortcuts for creating [VTEX IO Store Framework](https://developers.vtex.com/vtex-developer-docs/docs/overview-5).
 <br>
 
-## Requirements
+## ⚠️ WARNING
 
-The extension will be activated when working on .jsonc files
+Make sure you are writing to a .jsonc file, the extension is only enabled when using jsonc files.
 
 ## Current snippets
 
@@ -31,14 +36,13 @@ The extension will be activated when working on .jsonc files
 |  `vvideo→` | `VTEX Video`                  |
 | `viframe→` | `VTEX Iframe`                 |
 
-<br>
 
 ## Snippets Description
 
 ### `vrl`
 
 ```jsonc
-"store.custom#about-us": {
+"store.custom#change-me": {
   "blocks": [
     "responsive-layout.desktop",
     "responsive-layout.tablet",
@@ -59,7 +63,7 @@ The extension will be activated when working on .jsonc files
 ### `vfr`
 
 ```jsonc
-"flex-layout.row#": {
+"flex-layout.row#change-me": {
   "props": {
     "blockClass": "",
   },
@@ -70,7 +74,7 @@ The extension will be activated when working on .jsonc files
 ### `vfc`
 
 ```jsonc
-"flex-layout.col#": {
+"flex-layout.col#change-me": {
   "props": {
     "blockClass": "",
   },
@@ -109,17 +113,17 @@ The extension will be activated when working on .jsonc files
 ```jsonc
 {
   "store.home": {
-    "children": ["modal-trigger#example"]
+    "children": ["modal-trigger#change-me"]
   },
-  "modal-trigger#example": {
-    "children": ["rich-text#example", "modal-layout#example"]
+  "modal-trigger#change-me": {
+    "children": ["rich-text#change-me", "modal-layout#change-me"]
   },
-  "rich-text#example": {
+  "rich-text#change-me": {
     "props": {
       "text": "Click me"
     }
   },
-  "modal-layout#example": {
+  "modal-layout#change-me": {
     "children": ["rich-text#modal-content"]
   },
   "rich-text#modal-content": {
@@ -258,7 +262,7 @@ The extension will be activated when working on .jsonc files
 ### `vss`
 
 ```jsonc
-  "sku-selector#rename": {
+  "sku-selector#change-me": {
     "props": {
       "hideImpossibleCombinations": false
     }
@@ -267,24 +271,24 @@ The extension will be activated when working on .jsonc files
 ### `vfrfc`
 
 ```jsonc
-  "flex-layout.row#rename": {
+  "flex-layout.row#change-me": {
     "children": [
-      "flex-layout.col#rename"
+      "flex-layout.col#change-me"
     ]
   },
-  "flex-layout.col#rename": {
+  "flex-layout.col#change-me": {
     "children": []
   },
 ```
 ### `vfcfr`
 
 ```jsonc
-  "flex-layout.col#rename": {
+  "flex-layout.col#change-me": {
     "children": [
-      "flex-layout.row#rename"
+      "flex-layout.row#change-me"
     ]
   },
-  "flex-layout.row#rename": {
+  "flex-layout.row#change-me": {
     "children": []
   },
 ```
