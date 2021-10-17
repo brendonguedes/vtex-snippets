@@ -1,9 +1,11 @@
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=brendonguedes.vtex-snippets" rel="noopener" target="_blank"><img width="150" src="https://github.com/brendonguedes/vtex-snippets/blob/main/images/logo.png" alt="VTEX IO logo"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=brendonguedes.vtex-snippets" rel="noopener" target="_blank"><img width="150" src="https://vtex.io/_v/public/assets/v1/published/vtex.io-landing@1.3.1/public/react/a446484087d2f355fd7eafbcc4aac69e.svg" alt="VTEX IO logo"></a>
 </p>
 
 <h1 align="center">VTEX IO SNIPPETS</h1>
 <p align="center">A vscode <a href="https://marketplace.visualstudio.com/items?itemName=brendonguedes.vtex-snippets" target="_blank">extension</a> to create VTEX IO stores faster 🚀</p>
+
+<h4 align="center">Hi guys, join us on Discord at the <a href="https://discord.gg/TePnXc3nNk" target="_blank">VTEX Developers Community</a>. The purpose of this community is to provide a source of communication between VTEX Store Framework developers 🚀</h4>
 
 [![GitHub stars](https://img.shields.io/github/stars/brendonguedes/vtex-snippets?style=social&label=Star&maxAge=2592000)](https://github.com/brendonguedes/vtex-snippets/stargazers/)
 
