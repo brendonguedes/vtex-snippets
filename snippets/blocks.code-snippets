@@ -1,0 +1,45 @@
+{
+  "declarate link": {
+    "prefix": "decl-link",
+    "body": ["\"link#${1}\""],
+    "description": "declarate link",
+    "scope": "json, jsonc"
+  },
+
+  "link": {
+    "prefix": "link",
+    "body": [
+      "\"link#${1}\": {",
+      "    \"title\": \"\",",
+      "    \"props\": {",
+      "      \"label\": \"\",",
+      "      \"href\": \"\"",
+      "     }",
+      "  }"
+    ],
+    "description": "link",
+    "scope": "json, jsonc"
+  },
+  "toggle layout": {
+    "prefix": "toggle",
+    "body": [
+      " \"toggle-layout#${1}\": {",
+      "\"title\": \"\",",
+      "        \"children\": [",
+      "            \"\"",
+      "        ], ",
+      "\"props\": {",
+      "\"renderChildren\": true",
+      "}",
+      "    },"
+    ],
+    "description": "toggle layout",
+    "scope": "json, jsonc"
+  },
+  "declarate toggle layout": {
+    "prefix": "decl-toggle",
+    "body": [" \"toggle-layout#${1}\", "],
+    "description": "declarate toggle layout",
+    "scope": "json, jsonc"
+  }
+}

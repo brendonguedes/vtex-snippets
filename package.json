@@ -40,7 +40,11 @@
         "snippets": [
             {
                 "language": "jsonc",
-                "path": "./snippets/snippets.code-snippets"
+                "path":"./snippets/blocks.code-snippets"
+            },
+            {
+                "language": "jsonc",
+                "path": "snippets.code-snippets"
             }
         ]
     },

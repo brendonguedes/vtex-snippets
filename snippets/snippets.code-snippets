@@ -58,6 +58,7 @@
     ],
     "description": "Inserts a modal layout."
   },
+
   "Store Form": {
     "scope": "jsonc",
     "prefix": "vsf",
